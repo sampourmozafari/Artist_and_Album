@@ -8,6 +8,7 @@
     <?php
       $albumid = filter_input(INPUT_GET, 'albumid', FILTER_VALIDATE_INT) or die('Missing/illegal parameter');
     ?>
+    <h2>Artists</h2>
     <ul>
       <?php
         require_once 'dbcon.php';
