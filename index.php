@@ -5,6 +5,7 @@
     <title></title>
   </head>
   <body>
+    <h2>Albums</h2>
     <ul>
       <?php
         require_once 'dbcon.php';
