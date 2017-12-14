@@ -18,16 +18,16 @@
 
       $albumid = $link->insert_id;
 
-      $sql3 = 'INSERT INTO artist_has_album (artist_artist_id, album_album_id) VALUES (?, ?)';
-      $stmt3 = $link->prepare($sql3);
-      $stmt3->bind_param('ii', $artistid, $albumid);
-      $stmt3->execute();
+      $sql2 = 'INSERT INTO artist_has_album (artist_artist_id, album_album_id) VALUES (?, ?)';
+      $stmt2 = $link->prepare($sql2);
+      $stmt2->bind_param('ii', $artistid, $albumid);
+      $stmt2->execute();
 
-      if ($stmt3->affected_rows >0 ){
+      if ($stmt3->affected_rows>0){
       	echo 'Album added to artist';
       }
       else {
-      	echo 'No change - film allready added to category';
+      	echo 'No change - album allready added to artist';
       }
     ?>
 
